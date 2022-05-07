@@ -1,1 +1,1 @@
-# sen-prifi
+# sen-idl-parser
