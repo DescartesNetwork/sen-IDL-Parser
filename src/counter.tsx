@@ -1,11 +1,15 @@
-import * as React from "react";
+import { useState } from "react";
 
 export const Counter = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
   return (
     <>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+      <button onClick={() => setCount(count - 1)}>Decrease</button>
+      <button onClick={() => setCount(Math.floor(Math.random() * 100 + count))}>
+        Random
+      </button>
     </>
   );
 };
