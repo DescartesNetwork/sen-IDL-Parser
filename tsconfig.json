@@ -1,14 +1,16 @@
 {
-    "compilerOptions": {
-      "strict": true,
-      "jsx": "react-jsx",
-      "declaration": true,
-      "esModuleInterop": true,
-      "outDir": "dist",
-      "target": "es6",
-      "module": "es6",
-      "moduleResolution": "node"
-    },
-    "include": ["src"]
-  }
-  
+  "compilerOptions": {
+    "strict": true,
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["es6", "esnext.bigint"],
+    "jsx": "react-jsx",
+    "declaration": true,
+    "esModuleInterop": true,
+    "strictBindCallApply": false,
+    "outDir": "dist",
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "include": ["src"]
+}
