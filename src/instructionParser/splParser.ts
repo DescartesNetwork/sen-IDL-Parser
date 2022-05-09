@@ -1,8 +1,8 @@
-import { InstructionData } from './index'
 import { BorshInstructionCoder, Idl } from '@project-serum/anchor'
 import { bs58 } from '@project-serum/anchor/dist/cjs/utils/bytes'
 import { AccountMeta } from '@solana/web3.js'
 import { decodeInstruction } from './borshParser'
+import { InstructionData } from './type'
 
 const INST_CODE_IDX = 0
 const BEGIN_DATA_IDX = 1

@@ -1,11 +1,6 @@
-import { AccountMeta, Keypair } from '@solana/web3.js'
-import { decodeSplInstruction } from './splParser'
+import { Keypair } from '@solana/web3.js'
 
-export type InstructionData<T> = {
-  name: string
-  accounts: Map<string, AccountMeta>
-  data: T
-}
+import { decodeSplInstruction } from './splParser'
 
 const main = () => {
   const dataBuffer = Buffer.from('0300ca9a3b00000000', 'hex')
@@ -31,4 +26,5 @@ const main = () => {
   )
   console.log('data', data)
 }
+
 main()

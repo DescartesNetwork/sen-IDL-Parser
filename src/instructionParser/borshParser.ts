@@ -1,7 +1,6 @@
 import { BorshInstructionCoder, Idl } from '@project-serum/anchor'
 import { AccountMeta } from '@solana/web3.js'
-
-import { InstructionData } from './index'
+import { InstructionData } from './type'
 
 export const decodeInstruction = <T>(
   accountMetas: AccountMeta[],
