@@ -1,11 +1,12 @@
 {
   "name": "sen-idl-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "./build/index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "publish": "npm publish ./dist"
   },
   "repository": {
     "type": "git",
